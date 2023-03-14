@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.box_cabecalho {
+    height: 5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    width: 16.7725rem;
+    height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box_titulo {
+    display: flex;
+    width: 22rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 18rem;
+}
+
+.box_botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 18.4375rem;
+    align-items: center;
+    margin-right: 18.75rem;
+}
+
+.botao_login {
+    background-color: var(--white100);
+    border: 1px solid var(--blue100);
+    color: var(--blue100);
+    text-decoration: none;
+    width: 8.875rem;
+    height: 1.25rem;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+}
+
+.botao_cadastro {
+    background-color: var(--blue100);
+    color: var(--white100);
+    text-decoration: none;
+    text-decoration: none;
+    width: 9rem;
+    height: 1.4rem;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.6875rem 8.75rem 0 8.75rem;
+}
+
+select {
+    width: 37.5rem;
+    height: 3.2612rem;
+    text-align: center;
+    background-color: var(--blue100);
+    color: var(--white100);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+ul {
+    background-color: var(--white200);
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    max-height: 43.125rem;
+    box-sizing: border-box;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--white100);
+    width: 30.5625rem;
+    min-height: 8.4369rem;
+    padding: 0rem 0rem 0rem 2rem;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--blue100);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 24px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    border: 1px solid var(--blue100);
+    border-radius: 255px;
+    color: var(--blue100);
+    min-width: 6.25rem;
+    text-align: center;
+}
+

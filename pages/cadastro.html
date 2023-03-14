@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box_cabecalho">
+        <div class="box_titulo">
+            <img class="icone" src="../assets/icone.png" alt="Icone roxo">
+            <h1>Kenzie Empresas</h1>
+        </div>
+        <div class="box_botoes">
+            <a class="botao_home" href="../index.html">Home</a>
+            <a class="botao_cadastro" href="./cadastro.html">Cadastro</a>
+        </div>
+    </div>
+<form action="">
+    <h2>Cadastre-se</h2>
+    <input type="text"  name='username'class="signup__input" placeholder="Seu nome">
+    <input type="email" name='email' class="signup__input" placeholder="Seu e-mail">
+    <input type="password" name='password' class="signup__input" placeholder="Sua senha">
+    <select name="">
+        <option value="" default>Nível Profissional</option>
+        <option value="júnior">Júnior</option>
+        <option value="pleno">Pleno</option>
+        <option value="sênior">Sênior</option>
+    </select>
+    <button type="submit" class="botao_cadastrar">Cadastre-se</button>
+    <a class="retornar" href="../index.html">Retornar</a>
+</form>
+
+<script src="../scripts/register.js" type="module"></script>
+</body>
+</html>

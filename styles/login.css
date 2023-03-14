@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: url('../assets/login.png');
+    background-image: url(../assets/login.png);
+    background-repeat: no-repeat;
+    background-size: 118rem 60rem;
+}
+
+.box_cabecalho {
+    height: 5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white100);
+}
+
+h1 {
+    width: 16.7725rem;
+    height: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box_img {
+    width: 100%;
+}
+
+.img_login {
+    width: 100%;
+}
+
+.box_titulo {
+    display: flex;
+    width: 22rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 18rem;
+    
+}
+
+.box_botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 18.4375rem;
+    align-items: center;
+    margin-right: 18.75rem;
+}
+
+.botao_home {
+    background-color: var(--white100);
+    border: 1px solid var(--blue100);
+    color: var(--blue100);
+    text-decoration: none;
+    width: 8.875rem;
+    height: 1.25rem;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+}
+
+.botao_cadastro {
+    background-color: var(--blue100);
+    color: var(--white100);
+    text-decoration: none;
+    width: 9rem;
+    height: 1.4rem;
+    text-align: center;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+
+}
+
+form {
+    width: 31.625rem;
+    margin: 6.9375rem 31.1875rem 0 42.1875rem;
+    background-color: var(--white100);
+    position: absolute;
+    height: 30.5625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.95;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 60px;
+    width: 6.9375rem;
+    height: 3.75rem;
+    margin-left: -19.9375rem;
+}
+
+.descricao {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+    width: 20.875rem;
+    height: 1.5rem;
+    margin-left: -5.9375rem;
+}
+
+.login__input {
+    border: 1px solid gray;
+    width: 26.375rem;
+    height: 3.25rem;
+    background-color: var(--white100);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+
+}
+
+input::placeholder {
+    color: #808080;
+}
+
+.login {
+    width: 26.8rem;
+    height: 3rem;
+    background-color: var(--blue100);
+    color: var(--white100);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+    text-align: center;
+    border: none;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    cursor: pointer;
+}
+
+.cadastrar {
+    width: 26.8rem;
+    background-color: var(--white100);
+    color: var(--blue100);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid var(--blue100);
+    padding: 0.8rem 0rem 0.8rem 0rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: var(--black100);
+}
