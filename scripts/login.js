@@ -14,8 +14,10 @@ function handleLogin() {
     const loginBody = {}
     let count = 0
 
+    
     button.addEventListener('click', async (event) => {
-
+        
+        event.preventDefault()
         inputs.forEach(({ name, value }) => {
             if (value === '') {
                 count++

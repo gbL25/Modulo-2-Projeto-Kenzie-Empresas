@@ -107,6 +107,7 @@ h3 {
     font-size: 2.5rem;
     line-height: 48px;
     text-align: center;
+    margin: 2rem 2rem 2rem -18.625rem;
 }
 
 #editar_usuario {
@@ -183,7 +184,7 @@ ul {
 }
 
 .h5_titulo {
-    margin: -14.6875rem -101rem 2rem 0rem;
+    margin: -14.6875rem -101rem 2rem -15.5rem;
     width: 69.625rem;
     height: 4.875rem;
     display: block;

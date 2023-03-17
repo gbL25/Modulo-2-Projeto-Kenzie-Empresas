@@ -23,7 +23,7 @@ async function renderDepartments(filterDepartaments) {
     ul.innerHTML = ''
     let departments = await getAllDepartments()
 
-    if(filterDepartaments){
+    if (filterDepartaments) {
         departments = departments.filter(element => element.companies.uuid === filterDepartaments)
     }
     departments.forEach(element => {
@@ -89,8 +89,9 @@ async function renderUsers() {
     const registeredUsers = await getAllUsers()
     const ul = document.querySelector('.lista_usuarios')
 
+
     ul.innerHTML = ''
-    registeredUsers.forEach(element => {
+    registeredUsers.filter(element => element.username !== 'ADMIN').forEach(element => {
         const cardLi = document.createElement('li')
         const cardH4 = document.createElement('h4')
         const cardDescricao = document.createElement('p')
@@ -434,7 +435,9 @@ function editUsersModal(id) {
         body.kind_of_work = cardModalidade.value
         body.professional_level = cardNivel.value
         await editUser(id, body)
+        window.location.reload();
         dialogContainer.close();
+        dialogContainer.innerHTML = ''
     })
 
     botaoFechar.classList.add('fechar_editar_user')
@@ -516,22 +519,22 @@ async function renderAllEmployeesInTheSameDepartment(uuid, companies) {
 
             button.classList.add('botao_desligar')
             button.innerText = 'Desligar'
-            button.addEventListener('click', ()=>{
+            button.addEventListener('click', () => {
                 dismissEmployeeModal(element.uuid)
                 window.location.reload()
             })
 
-            
+
             li.append(h4, nivel, compania, button)
             ul.append(li)
             div.appendChild(ul)
         })
     }
 
-    
+
     return div
 }
 
-async function dismissEmployeeModal(id){
+async function dismissEmployeeModal(id) {
     const dismiss = await dismissEmployee(id)
 }
